@@ -1,0 +1,13 @@
+.headerContainer
+{
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    font-family: OswaldBold;
+}
+
+.imgHeader 
+{
+    width:70%;
+    height: 70%;
+}

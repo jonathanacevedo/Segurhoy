@@ -1,1 +1,131 @@
-/* You can add global styles to this file, and also import other style files */
+/* Tipografía general de la página web */
+@font-face {
+    font-family: Lobster;
+    src: url("../src/assets/fonts/Lobster-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: OswaldBold;
+    src: url("../src/assets/fonts/Oswald-Bold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: OswaldExtraLight;
+    src: url("../src/assets/fonts/Oswald-ExtraLight.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: OswaldLight;
+    src: url("../src/assets/fonts/Oswald-Light.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: OswaldMedium;
+    src: url("../src/assets/fonts/Oswald-Medium.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: OswaldRegular;
+    src: url("../src/assets/fonts/Oswald-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: OswaldSemiBold;
+    src: url("../src/assets/fonts/Oswald-SemiBold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinsBlack;
+    src: url("../src/assets/fonts/Poppins-Black.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinsBlackItalic;
+    src: url("../src/assets/fonts/Poppins-BlackItalic.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url("../src/assets/fonts/Poppins-Bold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinsBoldItalic;
+    src: url("../src/assets/fonts/Poppins-BoldItalic.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinsExtraBold;
+    src: url("../src/assets/fonts/Poppins-ExtraBold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinsExtraBoldItalic;
+    src: url("../src/assets/fonts/Poppins-ExtraBoldItalic.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinsExtraLight;
+    src: url("../src/assets/fonts/Poppins-ExtraLight.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinsExtraLightItalic;
+    src: url("../src/assets/fonts/Poppins-ExtraLightItalic.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinsItalic;
+    src: url("../src/assets/fonts/Poppins-Italic.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinLight;
+    src: url("../src/assets/fonts/Poppins-Light.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinsLightItalic;
+    src: url("../src/assets/fonts/Poppins-LightItalic.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinsMedium;
+    src: url("../src/assets/fonts/Poppins-Medium.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinMediumItalic;
+    src: url("../src/assets/fonts/Poppins-MediumItalic.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinsRegular;
+    src: url("../src/assets/fonts/Poppins-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinsSemiBold;
+    src: url("../src/assets/fonts/Poppins-SemiBold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinSemiBoldItalic;
+    src: url("../src/assets/fonts/Poppins-SemiBoldItalic.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinsThin;
+    src: url("../src/assets/fonts/Poppins-Thin.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: PoppinsThinItalic;
+    src: url("../src/assets/fonts/Poppins-ThinItalic.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: LionKing;
+    src: url("../src/assets/fonts/lion_king.ttf") format("opentype");
+}
+
