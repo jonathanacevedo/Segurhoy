@@ -129,3 +129,9 @@
     src: url("../src/assets/fonts/lion_king.ttf") format("opentype");
 }
 
+.fondoHome 
+{
+    background-repeat: no-repeat;
+    background-attachment: fixed;background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('./assets/images/posiblefondo1.jpg');	
+    background-size: cover;
+}
