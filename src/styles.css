@@ -132,6 +132,7 @@
 .fondoHome 
 {
     background-repeat: no-repeat;
+    margin: 0 auto;
     background-attachment: fixed;background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('./assets/images/posiblefondo1.jpg');	
     background-size: cover;
 }

@@ -4,12 +4,14 @@ html {
   
 .containerMain 
 {
-    width:70%; margin: 0 auto;
-    text-align: center; padding: 40px; 
+    width:70%;
+    margin: 0 auto;
+    text-align: center; 
+    padding: 40px; 
     background-color: #FFFFFF;
     font-family: PoppinsThin;
     border-radius: 20px 20px 20px 20px;
-    opacity: 0.9;
+    /* opacity: 0.9; */
 }
 
 ul 
@@ -89,4 +91,11 @@ ul li
     content: "";
     display: table;
     clear: both;
+  }
+
+  .img-body
+  {
+    width: 40%; 
+    height: 50%; 
+    border-radius: 25%;
   }
