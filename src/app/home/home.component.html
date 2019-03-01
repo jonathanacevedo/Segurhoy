@@ -1,8 +1,11 @@
 <div class="containerMain">      
-  <ul>
-  <div id="menuBotones">
 
-      <div id="btnInfo" class="btnMenuLateral" [ngx-scroll-to]="'info'">Información</div>
+  <!-- Menú Lateral para futuras implementaciones -->
+
+  <aside class="sidebar" [style.opacity]="!isVisible ? '0' : '1'" [style.visibility]="!isVisible ? 'hidden' : 'visible'">      
+  <ul>
+   <div id="menuBotones">
+      <div id="btnInfo" class="btnMenuLateral" [ngx-scroll-to]="'inform'">Información</div>
       <br>
       <div id="btnMision" class="btnMenuLateral" [ngx-scroll-to]="'mision'">Misión</div>
       <br>
@@ -11,17 +14,46 @@
       <div id="btnContacto" class="btnMenuLateral" [ngx-scroll-to]="'contacto'">Contacto</div>
     </div>
   </ul>
+</aside>
+  <!-- <div class="box" [@scrollAnimation]="state">
 
-  <div class="row" id="info">
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+
+  </div> -->
+
+  <!-- <div class="box" [@scrollAnimation]="state"> -->
+
+    <!-- <div ng-show="menuVisible">
+ 
+      <div class="topnav">
+        <a class="active">Home</a>
+        <a>News</a>
+        <a>Contact</a>
+        <a>About</a>
+      </div>
+    </div> -->
+
+
+
+    <!-- </div> -->
+
+  <div class="row" id="inform">
       <div class="column left">
         <img class="img-body" src="../../assets/images/beach-clouds-dusk-722024.jpg" alt="img-rep">
       </div>
-      <div class="column right">
+      <div class="column right" style="padding-top: 50px;">
         <h2>Información</h2>
         <p>Navigation is one of the most important elements of your website so today we'll be creating a modern overlay style menu using jQuery and Flexbox.
-      </div>
+          Starting with the layout for mobile we'll stack the elements on top of one another and then move on to centre the elements and share the available space between navigation items when the viewport is large enough and then fix the whole content block perfectly centred at a set maximum width, allowing the height to be dictated by the content.</p>
+
+        </div>
   </div>
-  
+
   <div id="container">
 
     <div id="mision">
@@ -55,7 +87,6 @@
             
             
     </div>
-
   </div>
   
 </div>

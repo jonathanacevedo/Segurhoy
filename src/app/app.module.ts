@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
@@ -24,6 +25,7 @@ import { ContentcardComponent } from './contentcard/contentcard.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     ScrollToModule.forRoot()
   ],
   providers: [],
