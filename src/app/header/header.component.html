@@ -3,26 +3,92 @@
   <div class="row" id="info">
     <div class="column left">
       <div class="header-container">
-        <img class="img-header" src="../../assets/images/PropuestaLogoSegurhoy.png" alt="loogoSegurhoy">
+        <img class="img-header" src="../../assets/images/SegundoLogoSegurhoy.png" alt="loogoSegurhoy">
       </div>
     </div>
     <div class="column right">
-      <div class="text-header">
-          Navigation is one of the most important elements of your website so today we'll be creating a modern overlay style menu using jQuery and Flexbox.
-      </div>
-
       <div class="container-header-buttons">
-        <button class="button-color">Contacto</button>
-        <button class="button-color">Más Información</button>
-      </div>
 
+        <!--<ul class="nav-items">
+          <li>
+            <a>
+              Casos
+            </a>
+          </li>
+          <li>
+            <a>
+              Servicios
+            </a>
+          </li>
+          <li>
+            <a>
+              Información
+            </a>
+          </li>
+          <li>
+            <a>
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </div>-->
+
+
+      <nav class="mynav">
+          <ul>
+            <li (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">
+              <a href="">Home</a>
+              <hr [@scrollAnimation]="state"/>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Company</a>
+            </li>
+            <li>
+              <a href="">Work</a>
+            </li>
+            <li>
+              <a href="">Clients</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+         
+        <span class="target"></span>
 
     </div>
   </div>
 
   <div class="container-down-image">
     <img class="img-down-header" src="../../assets/images/posibleBanner2.png" alt="header-image">
-    
   </div>
 
 </div>
+
+
+<!--
+
+<div class="main-header">
+<nav class="is-landing" id="nav-top">
+  <div class="container-fluid">
+    <a href="/" class="nav-logo">
+      <img height="70" src="../../assets/images/SegundoLogoSegurhoy.png" alt="loogoSegurhoy">
+    </a>
+    <ul class="nav-items">
+        <li>Información</li>
+        <li>Contacto</li>
+      </ul>
+  </div>
+
+
+</nav>
+
+
+
+</div>
+
+-->

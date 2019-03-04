@@ -16,11 +16,11 @@ import {
     trigger('scrollAnimation', [
       state('show', style({
         opacity: 1,
-        transform: "translateX(0)"
+        transform: "translatey(0)"
       })),
       state('hide',   style({
         opacity: 0,
-        transform: "translateX(-100%)"
+        transform: "translatey(-10%)"
       })),
       transition('show => hide', animate('700ms ease-out')),
       transition('hide => show', animate('700ms ease-in'))
@@ -45,14 +45,14 @@ export class HomeComponent implements OnInit {
       console.log("Position del scroll: "+scrollPosition);
 
 
-      if (scrollPosition >= 320) {
+      if (scrollPosition >= 390) {
         console.log("Valor de isVisible: "+this.isVisible);
-        this.isVisible = true;
+        //this.isVisible = true;
         this.state = 'show'
 
       } else {
         console.log("Valor de isVisible: "+this.isVisible);
-        this.isVisible = false;
+        //this.isVisible = false;
         this.state = 'hide'
 
       }

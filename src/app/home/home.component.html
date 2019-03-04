@@ -54,9 +54,14 @@
         </div>
   </div>
 
+  <div [@scrollAnimation]="state">
+      <app-contentcard></app-contentcard>
+
+  </div>
+
   <div id="container">
 
-    <div id="mision">
+    <div id="mision" [@scrollAnimation]="state">
       
       <h2>Esta es la misión</h2>
       <p>Navigation is one of the most important elements of your website so today we'll be creating a modern overlay style menu using jQuery and Flexbox.
@@ -65,7 +70,7 @@
     
     </div>
 
-    <div id="vision">
+    <div id="vision" >
         <h2>Esta es la visión</h2>
         <p>Navigation is one of the most important elements of your website so today we'll be creating a modern overlay style menu using jQuery and Flexbox.
 
