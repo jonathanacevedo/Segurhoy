@@ -12,8 +12,6 @@ html {
     margin-right: 0px;
     background-color: #FFFFFF;
     font-family: PoppinsThin;
-    border-radius: 20px 20px 20px 20px;
-    /* opacity: 0.9; */
 }
 
 ul 
@@ -141,3 +139,12 @@ ul li
   {
     transition: all .3s;
   }
+
+  .sticky {
+    background: #fff;
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
+    position: fixed;
+    top: 0;
+    height: 120px;
+    width: 100%;
+}

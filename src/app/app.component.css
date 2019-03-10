@@ -3,3 +3,6 @@
 	background-size: cover;
 }
 
+section {
+    display: block;
+}

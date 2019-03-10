@@ -1,5 +1,5 @@
-import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
-
+import { Component, OnInit, HostListener, ElementRef, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 import {
   trigger,
   state,
@@ -8,76 +8,100 @@ import {
   transition
 } from '@angular/animations';
 
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   animations: [
-    trigger('scrollAnimation', [
-      state('show', style({
-        opacity: 1,
-        transform: "translatey(0)"
+    trigger('fade',
+      [
+        state('void', style({ opacity: 0 })),
+        transition(':enter', [animate(300)]),
+        transition(':leave', [animate(500)]),
+      ]),
+    trigger('moveHeader', [
+      state('maxSize', style({
+        left: '5%',
+        width: '70%',
+        opacity: 100
       })),
-      state('hide',   style({
-        opacity: 0,
-        transform: "translatey(-10%)"
+      state('minSize', style({
+        opacity: 0
       })),
-      transition('show => hide', animate('700ms ease-out')),
-      transition('hide => show', animate('700ms ease-in'))
+      transition('maxSize => minSize', animate('500ms ease-out')),
+      transition('minSize => maxSize', animate('500ms ease-in')),
     ])
   ]
 })
 export class HomeComponent implements OnInit {
 
-  state = 'hide'
+  state = 'maxSize'
 
   isVisible: boolean = false;
 
 
-  constructor(public el: ElementRef) { }
-
-  @HostListener('window:scroll', ['$event'])
-    checkScroll(event) {
-      const componentPosition = this.el.nativeElement.offsetTop
-      const scrollPosition = window.pageYOffset
-
-      console.log("Position de la página: "+componentPosition);
-      console.log("Position del scroll: "+scrollPosition);
+  constructor(public el: ElementRef, @Inject(DOCUMENT) document) { }
 
 
-      if (scrollPosition >= 390) {
-        console.log("Valor de isVisible: "+this.isVisible);
-        //this.isVisible = true;
-        this.state = 'show'
-
-      } else {
-        console.log("Valor de isVisible: "+this.isVisible);
-        //this.isVisible = false;
-        this.state = 'hide'
-
-      }
-
-    }
 
 
-  irInfo(){
+  // @HostListener('window:scroll', ['$event'])
+  // onWindowScroll(e) {
+  //   if (window.pageYOffset > 110) {
+  //     let element = document.getElementById('image-header');
+  //     element.classList.remove('image-header');
+  //     element.classList.add('image-header-down');
+  //   } else {
+  //     let element = document.getElementById('image-header');
+  //     element.classList.remove('image-header-down');
+  //     element.classList.add('image-header');
+  //   }
+  // }
+
+
+  // @HostListener('window:scroll', ['$event'])
+  // checkScroll(event) {
+  //   const componentPosition = this.el.nativeElement.offsetTop;
+  //   const scrollPosition = window.pageYOffset;
+
+  //   if (scrollPosition >= 120) {
+  //     console.log("Pequeño...");
+  //     this.isVisible = true;
+  //     this.state = 'minSize';
+
+  //   } else {
+  //     console.log("Grande...");
+  //     this.isVisible = false;
+  //     this.state = 'maxSize';
+
+  //   }
+
+  // }
+
+
+  irInfo() {
     document.querySelector('#info').scrollIntoView({ behavior: 'smooth' });
   }
 
-  irMision(){
+  irMision() {
     document.querySelector('#mision').scrollIntoView({ behavior: 'smooth' });
   }
 
-  irVision(){
+  irVision() {
     document.querySelector('#vision').scrollIntoView({ behavior: 'smooth' });
   }
 
-  irContacto(){
+  irContacto() {
     document.querySelector('#contacto').scrollIntoView({ behavior: 'smooth' });
   }
 
 
   ngOnInit() {
+    this.state = "minSize";
+    // let element = document.getElementById('info');
+    // element.classList.add('sticky');
   }
 
 }

@@ -1,15 +1,16 @@
-<div class="main-header">
+  <div class="main-header" id="navbar">
 
-  <div class="row" id="info">
-    <div class="column left">
-      <div class="header-container">
-        <img class="img-header" src="../../assets/images/SegundoLogoSegurhoy.png" alt="loogoSegurhoy">
+    <div class="row" id="info" [@resizeHeader]="stateH" style="height: auto;">
+      <div class="column left">
+        <div class="header-container">
+          <img class="img-header" [@moveHeader]="state" src="../../assets/images/Segurhoy_CompletoLogo.png" alt="loogoSegurhoy">
+          <!-- <img class="img-header" [@moveInfoHeader]="stateInfo" src="../../assets/images/Segurhoy_InfoLogo.png" alt="loogoSegurhoy"> -->
+        </div>
       </div>
-    </div>
-    <div class="column right">
-      <div class="container-header-buttons">
+      <div class="column right">
+        <div class="container-header-buttons">
 
-        <!--<ul class="nav-items">
+          <!--<ul class="nav-items">
           <li>
             <a>
               Casos
@@ -34,41 +35,49 @@
       </div>-->
 
 
-      <nav class="mynav">
-          <ul>
-            <li (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">
-              <a href="">Home</a>
-              <hr [@scrollAnimation]="state"/>
-            </li>
-            <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Company</a>
-            </li>
-            <li>
-              <a href="">Work</a>
-            </li>
-            <li>
-              <a href="">Clients</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-          </ul>
-        </nav>
-         
-        <span class="target"></span>
+     
+      <!-- Crear un header que se mostrará cuando nos movamos en la página, con este elemento se mostrará 
+        por código en el body (Ojo que se dañó el banner con los servicios, mirar la animación del body)
+      <div class="animated fadeInDown" id="navbar">
+      -->
+
+          <nav class="mynav">
+            <ul [@moveInfoHeader]="stateInfo">
+              <li (mouseover)="onMouseOver('1')" (mouseout)="onMouseOut('1')">
+                <a class="menu-option" href="">Inicio</a>
+                <hr [@animation-1]="state1" />
+              </li>
+              <li (mouseover)="onMouseOver('2')" (mouseout)="onMouseOut('2')">
+                <a class="menu-option" href="">Compañia</a>
+                <hr [@animation-2]="state2" />
+              </li>
+              <li (mouseover)="onMouseOver('3')" (mouseout)="onMouseOut('3')">
+                <a class="menu-option" href="">Clientes</a>
+                <hr [@animation-3]="state3" />
+              </li>
+              <li (mouseover)="onMouseOver('4')" (mouseout)="onMouseOut('4')">
+                <a class="menu-option" href="">Trabajo</a>
+                <hr [@animation-4]="state4" />
+              </li>
+              <li (mouseover)="onMouseOver('5')" (mouseout)="onMouseOut('5')">
+                <a class="menu-option" href="">Contacto</a>
+                <hr [@animation-5]="state5" />
+              </li>
+            </ul>
+          </nav>
+
+          <span class="target"></span>
+
+        </div>
+      </div>
+
+      <!-- <div class="container-down-image">
+        <img class="img-down-header" src="../../assets/images/posibleBanner2.png" alt="header-image">
+      </div> -->
 
     </div>
+
   </div>
-
-  <div class="container-down-image">
-    <img class="img-down-header" src="../../assets/images/posibleBanner2.png" alt="header-image">
-  </div>
-
-</div>
-
 
 <!--
 

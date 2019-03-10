@@ -12,6 +12,8 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ContentcardComponent } from './contentcard/contentcard.component';
+import { CompanyComponent } from './company/company.component';
+import { WorkComponent } from './work/work.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ContentcardComponent } from './contentcard/contentcard.component';
     BodyComponent,
     FooterComponent,
     HomeComponent,
-    ContentcardComponent
+    ContentcardComponent,
+    CompanyComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,

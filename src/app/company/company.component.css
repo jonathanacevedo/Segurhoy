@@ -1,0 +1,102 @@
+.featured-schools {
+    padding: 60px 0;
+}
+section {
+    /* clear: both; */
+    padding: 0;
+    /* *zoom: 1; */
+}
+
+section:before, section:after {
+    content: "";
+    display: table;
+}
+
+.featured-schools .wrapper {
+    padding: 0 20px;
+}
+.wrapper {
+    position: inherit;
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* *zoom: 1; */
+}
+
+.wrapper:before, .wrapper:after {
+    content: "";
+    display: table;
+}
+
+div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.featured-schools h2 {
+    font-family: OswaldExtraLight;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0 25px;
+    color: #555;
+}
+
+.featured-schools .school-col-row {
+    margin: 10px -50px 0;
+    display: flex;
+}
+
+.featured-schools .school-col {
+    /* position: relative; */
+    width: 25%;
+    float: left;
+    padding: 0 30px;
+    border-right: 1px solid #d3d3d3;
+    margin-top: 50px;
+}
+
+.featured-schools .school-col:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 1px;
+    height: 46px;
+    background: #e5166b;
+}
+
+.featured-schools .school-col h3 {
+    font-family: OswaldExtraLight;
+    font-size: 1.625em;
+    line-height: 1;
+    text-transform: none;
+    color: #767676;
+    margin-bottom: 20px;
+}
+
+.featured-schools .school-col p {
+    font-family: "October Regular",Helvetica,Arial,sans-serif;
+    color: #767676;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.4;
+    font-family: OswaldExtraLight;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+*, ::after, ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #dee2e6!important;
+}

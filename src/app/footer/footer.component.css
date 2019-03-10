@@ -1,9 +1,41 @@
-.footerContainer{
+footer {
+    display: block;
+    background: linear-gradient(180deg, #1C1F28 0%, #21242F 100%);
     width: 100%;
-    height: 80px;
-    padding: 20px;
-    margin: 0 auto;
+    padding: 10px 20px 30px 20px;
+    float: left;
+    font-family: OswaldExtraLight;
+}
+
+.top-footer {
+    margin-top: 60px;
+    display: inline-block;
+    width: 100%;
+}
+
+footer *, footer *::before, footer *::after {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+*, ::after, ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.new-container {
+    width: 100%;
+    color: #FFFFFF;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
-    background-color: gray;
-    font-family: LionKing;
 }

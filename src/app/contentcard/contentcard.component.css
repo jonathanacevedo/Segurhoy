@@ -4,6 +4,7 @@
     margin: 0 auto;
     text-align: center;
     height: 50%;
+    border:0;
 }
 /* 
 #container div 
@@ -13,12 +14,13 @@
     height: 100%;
 } */
 .card-container {
-    float: left;
+    font-family: OswaldExtraLight;
     width: 100%;
+    height: 10%;
     display: inline-block;
-    background: url(https://cdn.shopify.com/s/files/1/0301/0065/files/rain_background_spring_gis_2048_2048x2048.jpg?6289901723855561721);
-    padding: 75px 0px;
-    margin: 58px 0px;
+    background: url(/../../assets/images/handshake-2056023_1920.jpg);
+    padding: 50px 0px;
+    padding-top: 130px;
     color: #ffffff;
 }
 .container {
@@ -38,12 +40,6 @@
 div {
     display: block;
 }
-
-.elementPage
-{
-    font-family: Lobster;
-}
-
 
 .card-container ul li:nth-child(3n+1) {
     margin-left: 0px;
@@ -72,7 +68,7 @@ div {
     float: left;
     width: 32%;
     margin: 11px;
-    background: rgba(28,41,61,0.4);
+    background: rgba(28,41,61,0.6);
     padding: 25px;
 }
 
@@ -84,6 +80,7 @@ div {
 
 li {
     display: list-item;
+    border-radius: 10%;
     text-align: -webkit-match-parent;
 }
 

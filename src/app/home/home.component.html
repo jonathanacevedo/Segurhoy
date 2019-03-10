@@ -1,21 +1,27 @@
-<div class="containerMain">      
+<section class="web_homePage" (scroll)="onWindowScroll($event);">
+  <!-- rest of the html code goes here -->
 
-  <!-- Menú Lateral para futuras implementaciones -->
 
-  <aside class="sidebar" [style.opacity]="!isVisible ? '0' : '1'" [style.visibility]="!isVisible ? 'hidden' : 'visible'">      
-  <ul>
-   <div id="menuBotones">
-      <div id="btnInfo" class="btnMenuLateral" [ngx-scroll-to]="'inform'">Información</div>
-      <br>
-      <div id="btnMision" class="btnMenuLateral" [ngx-scroll-to]="'mision'">Misión</div>
-      <br>
-      <div id="btnVision" class="btnMenuLateral" [ngx-scroll-to]="'vision'">Visión</div>
-      <br>
-      <div id="btnContacto" class="btnMenuLateral" [ngx-scroll-to]="'contacto'">Contacto</div>
-    </div>
-  </ul>
-</aside>
-  <!-- <div class="box" [@scrollAnimation]="state">
+  <div class="containerMain">
+
+    <!-- Menú Lateral para futuras implementaciones -->
+
+    <!-- <aside class="sidebar" [style.opacity]="!isVisible ? '0' : '1'"
+    [style.visibility]="!isVisible ? 'hidden' : 'visible'">
+    <ul>
+      <div id="menuBotones">
+        <div id="btnInfo" class="btnMenuLateral" [ngx-scroll-to]="'inform'">Información</div>
+        <br>
+        <div id="btnMision" class="btnMenuLateral" [ngx-scroll-to]="'mision'">Misión</div>
+        <br>
+        <div id="btnVision" class="btnMenuLateral" [ngx-scroll-to]="'vision'">Visión</div>
+        <br>
+        <div id="btnContacto" class="btnMenuLateral" [ngx-scroll-to]="'contacto'">Contacto</div>
+      </div>
+    </ul>
+  </aside> -->
+
+    <!-- <div class="box" [@scrollAnimation]="state">
 
     <div class="topnav">
       <a class="active" href="#home">Home</a>
@@ -25,73 +31,136 @@
     </div>
 
   </div> -->
+    <!-- 
+  <div class="box" [@scrollAnimation]="state">
 
-  <!-- <div class="box" [@scrollAnimation]="state"> -->
+  <div ng-show="menuVisible">
 
-    <!-- <div ng-show="menuVisible">
- 
-      <div class="topnav">
-        <a class="active">Home</a>
-        <a>News</a>
-        <a>Contact</a>
-        <a>About</a>
-      </div>
-    </div> -->
-
-
-
-    <!-- </div> -->
-
-  <div class="row" id="inform">
-      <div class="column left">
-        <img class="img-body" src="../../assets/images/beach-clouds-dusk-722024.jpg" alt="img-rep">
-      </div>
-      <div class="column right" style="padding-top: 50px;">
-        <h2>Información</h2>
-        <p>Navigation is one of the most important elements of your website so today we'll be creating a modern overlay style menu using jQuery and Flexbox.
-          Starting with the layout for mobile we'll stack the elements on top of one another and then move on to centre the elements and share the available space between navigation items when the viewport is large enough and then fix the whole content block perfectly centred at a set maximum width, allowing the height to be dictated by the content.</p>
-
-        </div>
+    <div class="topnav">
+      <a class="active">Home</a>
+      <a>News</a>
+      <a>Contact</a>
+      <a>About</a>
+    </div>
   </div>
+  </div> -->
 
-  <div [@scrollAnimation]="state">
+
+    <!-- <div class="row" id="inform">
+  <div class="column left">
+    <img class="img-body" src="../../assets/images/beach-clouds-dusk-722024.jpg" alt="img-rep">
+  </div>
+  <div class="column right" style="padding-top: 50px;">
+    <h2>Información</h2>
+    <p>Navigation is one of the most important elements of your website so today we'll be creating a modern overlay
+      style menu using jQuery and Flexbox.
+      Starting with the layout for mobile we'll stack the elements on top of one another and then move on to centre the
+      elements and share the available space between navigation items when the viewport is large enough and then fix the
+      whole content block perfectly centred at a set maximum width, allowing the height to be dictated by the content.
+    </p>
+  </div>
+</div> -->
+
+    <!-- <div [@scrollAnimation]="state"> -->
+
+
+
+    <!-- <div style="height: 100%; width: 100%;">
+
+probando este espacio <br>
+probando este espacio <br>
+probando este espacio <br>
+probando este espacio <br>
+probando este espacio <br>
+
+</div> -->
+
+    <div>
       <app-contentcard></app-contentcard>
-
-  </div>
-
-  <div id="container">
-
-    <div id="mision" [@scrollAnimation]="state">
-      
-      <h2>Esta es la misión</h2>
-      <p>Navigation is one of the most important elements of your website so today we'll be creating a modern overlay style menu using jQuery and Flexbox.
-
-          Starting with the layout for mobile we'll stack the elements on top of one another and then move on to centre the elements and share the available space between navigation items when the viewport is large enough and then fix the whole content block perfectly centred at a set maximum width, allowing the height to be dictated by the content.</p>
-    
+    </div>
+    <div>
+      <app-company></app-company>
     </div>
 
-    <div id="vision" >
+    <div>
+      <app-work></app-work>
+    </div>
+
+    <div id="container">
+
+      <div id="mision">
+
+        <h2>Esta es la misión</h2>
+        <p>Navigation is one of the most important elements of your website so today we'll be creating a modern overlay
+          style menu using jQuery and Flexbox.
+
+          Starting with the layout for mobile we'll stack the elements on top of one another and then move on to centre
+          the
+          elements and share the available space between navigation items when the viewport is large enough and then fix
+          the
+          whole content block perfectly centred at a set maximum width, allowing the height to be dictated by the
+          content.
+        </p>
+
+      </div>
+
+      <div id="vision">
         <h2>Esta es la visión</h2>
-        <p>Navigation is one of the most important elements of your website so today we'll be creating a modern overlay style menu using jQuery and Flexbox.
+        <p>Navigation is one of the most important elements of your website so today we'll be creating a modern overlay
+          style menu using jQuery and Flexbox.
 
-            Starting with the layout for mobile we'll stack the elements on top of one another and then move on to centre the elements and share the available space between navigation items when the viewport is large enough and then fix the whole content block perfectly centred at a set maximum width, allowing the height to be dictated by the content.</p>
-      
-    </div>
+          Starting with the layout for mobile we'll stack the elements on top of one another and then move on to centre
+          the
+          elements and share the available space between navigation items when the viewport is large enough and then fix
+          the
+          whole content block perfectly centred at a set maximum width, allowing the height to be dictated by the
+          content.
+        </p>
 
-    <div id="contacto">
+      </div>
+
+      <div id="contacto">
         <h2>Este es el contacto</h2>
-        <p>Navigation is one of the most important elements of your website so today we'll be creating a modern overlay style menu using jQuery and Flexbox.
+        <p>Navigation is one of the most important elements of your website so today we'll be creating a modern overlay
+          style menu using jQuery and Flexbox.
 
-            Starting with the layout for mobile we'll stack the elements on top of one another and then move on to centre the elements and share the available space between navigation items when the viewport is large enough and then fix the whole content block perfectly centred at a set maximum width, allowing the height to be dictated by the content.</p>
-            <p>Navigation is one of the most important elements of your website so today we'll be creating a modern overlay style menu using jQuery and Flexbox.
-    
-                Starting with the layout for mobile we'll stack the elements on top of one another and then move on to centre the elements and share the available space between navigation items when the viewport is large enough and then fix the whole content block perfectly centred at a set maximum width, allowing the height to be dictated by the content.</p>
-                <p>Navigation is one of the most important elements of your website so today we'll be creating a modern overlay style menu using jQuery and Flexbox.
-    
-                    Starting with the layout for mobile we'll stack the elements on top of one another and then move on to centre the elements and share the available space between navigation items when the viewport is large enough and then fix the whole content block perfectly centred at a set maximum width, allowing the height to be dictated by the content.</p>
-            
-            
+          Starting with the layout for mobile we'll stack the elements on top of one another and then move on to centre
+          the
+          elements and share the available space between navigation items when the viewport is large enough and then fix
+          the
+          whole content block perfectly centred at a set maximum width, allowing the height to be dictated by the
+          content.
+        </p>
+        <p>Navigation is one of the most important elements of your website so today we'll be creating a modern overlay
+          style menu using jQuery and Flexbox.
+
+          Starting with the layout for mobile we'll stack the elements on top of one another and then move on to centre
+          the
+          elements and share the available space between navigation items when the viewport is large enough and then fix
+          the
+          whole content block perfectly centred at a set maximum width, allowing the height to be dictated by the
+          content.
+        </p>
+        <p>Navigation is one of the most important elements of your website so today we'll be creating a modern overlay
+          style menu using jQuery and Flexbox.
+
+          Starting with the layout for mobile we'll stack the elements on top of one another and then move on to centre
+          the
+          elements and share the available space between navigation items when the viewport is large enough and then fix
+          the
+          whole content block perfectly centred at a set maximum width, allowing the height to be dictated by the
+          content.
+        </p>
+
+
+      </div>
     </div>
+
   </div>
-  
+
+</section>
+
+
+<div style="padding-top: 50px;">
+  <app-footer></app-footer>
 </div>
