@@ -32,13 +32,23 @@ import {
       })),
       transition('maxSize => minSize', animate('500ms ease-out')),
       transition('minSize => maxSize', animate('500ms ease-in')),
+    ]),
+    trigger('show-company', [
+      state('show', style({
+        opacity: 1,
+      })),
+      state('hide', style({
+        opacity: 0.5,
+      })),
+      transition('hide => show', animate('500ms ease-out')),
+      transition('show => hide', animate('500ms ease-in')),
     ])
   ]
 })
 export class HomeComponent implements OnInit {
 
-  state = 'maxSize'
-
+  state = 'maxSize';
+  public stateCompany: any = "hide";
   isVisible: boolean = false;
 
 
@@ -80,9 +90,21 @@ export class HomeComponent implements OnInit {
 
   // }
 
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(e) {
+    console.log("Valor del scroll: "+window.pageYOffset)
+    
+    if (window.pageYOffset < 400) {
+
+    } else if (window.pageYOffset > 400 && window.pageYOffset < 900) {
+    } else if (window.pageYOffset > 900 && window.pageYOffset < 2000) {
+      this.stateCompany = "show";
+
+    }
+  }
 
   irInfo() {
-    document.querySelector('#info').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('#content-card').scrollIntoView({ behavior: 'smooth' });
   }
 
   irMision() {
@@ -100,8 +122,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.state = "minSize";
-    // let element = document.getElementById('info');
-    // element.classList.add('sticky');
   }
 
 }

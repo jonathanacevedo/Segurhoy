@@ -1,4 +1,5 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 import {
   trigger,
   state,
@@ -79,7 +80,7 @@ import {
         width: '0%',
         opacity: 0
       })),
-      
+
       transition('show-5 => hide-5', animate('500ms ease-out')),
       transition('hide-5 => show-5', animate('500ms ease-in')),
     ]),
@@ -119,23 +120,23 @@ import {
 })
 export class HeaderComponent implements OnInit {
 
-  public links        : any;
-  public colors       : any;
-  public target       : any;
+  public links: any;
+  public colors: any;
+  public target: any;
 
-  public isMouseover  = false;
+  public isMouseover = false;
   public animationOver: any;
 
-  public state        : any;
-  public stateInfo    : any;
-  public stateH       : any;
-  public state1       : any;
-  public state2       : any;
-  public state3       : any;
-  public state4       : any;
-  public state5       : any;
+  public state: any;
+  public stateInfo: any;
+  public stateH: any;
+  public state1: any;
+  public state2: any;
+  public state3: any;
+  public state4: any;
+  public state5: any;
 
-  constructor() {
+  constructor(public el: ElementRef, @Inject(DOCUMENT) document) {
 
   }
 
@@ -143,9 +144,20 @@ export class HeaderComponent implements OnInit {
     this.initStates();
   }
 
+  @HostListener('window:scroll', ['$event'])
+  onWindowScrollPage(e) {
+    console.log("Valor del scroll: " + window.pageYOffset)
+    if (window.pageYOffset > 0 && window.pageYOffset < 640) {
+      console.log("En la condición!");
+      this.state1 = 'show-1';
+    }
+  }
+
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
+    console.log("Valor del Scroll : " + window.pageYOffset);
+
     if (window.pageYOffset > 110) {
       this.state = "minSize";
       this.stateInfo = "down-bar";
@@ -180,7 +192,7 @@ export class HeaderComponent implements OnInit {
         this.state5 = 'show-5';
         break;
     }
-    
+
   }
 
   onMouseOut(element: any) {
@@ -205,14 +217,18 @@ export class HeaderComponent implements OnInit {
   }
 
 
-  initStates(){
-    this.state          = "maxSize";
-    this.stateInfo      = "up-bar";
-    this.state1         = 'hide-1';    
-    this.state2         = 'hide-2';
-    this.state3         = 'hide-3';
-    this.state4         = 'hide-4';
-    this.state5         = 'hide-5';
+  irInfo() {
+    document.querySelector('#content-card').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  initStates() {
+    this.state = "maxSize";
+    this.stateInfo = "up-bar";
+    this.state1 = 'hide-1';
+    this.state2 = 'hide-2';
+    this.state3 = 'hide-3';
+    this.state4 = 'hide-4';
+    this.state5 = 'hide-5';
 
   }
 }

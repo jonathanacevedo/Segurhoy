@@ -37,6 +37,7 @@
 {
     width: 30%;
     height: 20%;
+    cursor: pointer;
 }
 
 
@@ -266,7 +267,7 @@ p, li {
     color: #5F6F7E;
     text-decoration: none;
     padding: 7px 15px;
-
+    cursor: pointer;
   }
    
   .target {

@@ -14,6 +14,8 @@ import { HomeComponent } from './home/home.component';
 import { ContentcardComponent } from './contentcard/contentcard.component';
 import { CompanyComponent } from './company/company.component';
 import { WorkComponent } from './work/work.component';
+import { InfoComponent } from './info/info.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { WorkComponent } from './work/work.component';
     HomeComponent,
     ContentcardComponent,
     CompanyComponent,
-    WorkComponent
+    WorkComponent,
+    InfoComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
