@@ -23,6 +23,7 @@
     "@nicky-lenaers/ngx-scroll-to": "^2.0.0",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
+    "express": "^4.16.4",
     "smoothscroll-polyfill": "^0.4.3",
     "sweetalert": "^2.1.2",
     "terser": "^3.14.1",
