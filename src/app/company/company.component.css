@@ -95,16 +95,17 @@ div {
 }
 
 p {
-    line-height: 1.8;
-    font-family: PoppinsThin;
+    line-height: 2;
+    font-family: OswaldExtraLight;
     margin-bottom: 16px;
-    font-size: 1rem;
+    font-size: 1.18rem;
     color: #333;
 }
 
 *, ::after, ::before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    position: inherit;
 }
 
 .border-bottom {

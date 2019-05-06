@@ -18,7 +18,7 @@
     height: 10%;
     border: 0;
     text-align: center;
-    background-color: #d3d3d3;
+    /* background-color: #d3d3d3; */
     margin: 0 auto;
     box-shadow: 0 3px 12px 0 rgba(0,0,0,4);
 }
@@ -35,8 +35,8 @@
 
 .img-header
 {
-    width: 30%;
-    height: 20%;
+    width: 25%;
+    height: 15%;
     cursor: pointer;
 }
 
@@ -148,106 +148,8 @@
 
 
 .link-header{
-    color: red;
     font-size: 2rem;
 }
-
-/*
-.nav-items {
-    display: block;
-    list-style: none;
-    float: right;
-    margin-right: -10px;
-    padding-top: 28px;
-    padding-left: 0;
-}
-ol, ul {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-ul, menu, dir {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-.container-fluid {
-    position: relative;
-    max-width: 1500px;
-    padding: 0 125px;
-    -webkit-transition: padding .3s;
-    transition: padding .3s;
-}
-.container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
-.nav-logo {
-    position: relative;
-    display: inline-block;
-    padding: 15px;
-    margin-left: -15px;
-}
-a {
-    color: #337ab7;
-    text-decoration: none;
-}
-a {
-    background-color: transparent;
-}
-
-.nav-items li {
-    float: left;
-    display: inline-block;
-}
-
-p, li {
-    font-size: 18px;
-    line-height: 175%;
-    font-family: "Karla",sans-serif;
-    color: #666;
-}
-
-
-.nav-items li a:after, .nav-items li p:after {
-    position: absolute;
-    content: "";
-    left: 50%;
-    right: 50%;
-    bottom: 8px;
-    height: 2px;
-    background-color: #18ECC0;
-    -webkit-transition: left .25s, right .25s;
-    transition: left .25s, right .25s;
-}
-
-
-.nav-items li a, .nav-items li p {
-    position: relative;
-    display: inline-block;
-    font-size: 21px;
-    color: #666;
-    text-decoration: none;
-    -webkit-transition: color .25s;
-    transition: color .25s;
-    line-height: 1.4;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-*/
-
 
 .mynav ul {
     display: flex;
@@ -264,7 +166,9 @@ p, li {
    
   .mynav a {
     display: block;
-    color: #5F6F7E;
+    color: #00739a;
+    /* font-weight: bold; */
+    text-shadow: 0.2px 0.2px #000000;
     text-decoration: none;
     padding: 7px 15px;
     cursor: pointer;
@@ -309,15 +213,15 @@ hr{
 
 
 hr{
-    border-top: 2px solid #162741;
+    border-top: 2px solid #00ade6;
     margin-top: 0;
-
 }
 
 .menu-option
 {
     font-family: OswaldExtraLight;
     font-size: 1.5rem;
+    position: relative;
 }
 
 @keyframes line {

@@ -1,5 +1,6 @@
 .text-center {
     text-align: center!important;
+    position: inherit;
 }
 .pb-7, .py-7 {
     padding-bottom: 3.75rem!important;
@@ -57,11 +58,11 @@ section {
 }
 
 h2{
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 h4{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .text-center {
@@ -93,6 +94,19 @@ h4{
     padding: 40px;
 }
 
+.button-contact {
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
 p{
     font-size: 1.2rem;
 }
@@ -113,15 +127,4 @@ div {
     display: block;
 }
 
-.button {
-    background-color: #008CBA; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
+

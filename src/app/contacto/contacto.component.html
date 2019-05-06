@@ -1,30 +1,67 @@
-<section class="featured-schools border-bottom">
-
+<section class="py-7 text-center border-bottom">
+  <div class="container">
     <div class="wrapper">
-      <h2 class="section-title text-center"> <strong>¡Contactanos!</strong> </h2>
+      <h2 class="section-title text-center">¡Contactanos!</h2>
+    </div>
+    <div class="row" [@show-works]="stateWorks">
+      <div class="col text-center d-flex flex-column justify-content-end">
+        <div style="padding-bottom: 90px;">
+          <h4> <strong>Ingresa algunos datos personales</strong> </h4>
+          <p>
+            Si quieres tener más información o solicitas asesoria en algún caso o estudio
+            de cualquier tipo, dejanos tu información y con gusto te contactaremos lo antes posible.
+          </p>
+        </div>
+      </div>
+      <div class="col text-center d-flex flex-column justify-content-end">
+        <div style="padding-top: 10px; position: initial;">
+          <form>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-2 col-form-label">Nombre: </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputPassword" placeholder="Nombre de Contacto">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-2 col-form-label">Email: </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="staticEmail" placeholder="email@ejemplo.com">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-2 col-form-label">Teléfono: </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="staticEmail" placeholder="Teléfono">
+              </div>
+            </div>
+          </form>
+        </div>
+        <br>
+        <div style="width: 50%; margin: 0 auto; text-align: center;">
+          <button (click)="fillContact()" class="button-contact">Enviar</button>
+        </div>
+      </div>
     </div>
 
-    <p>
-      Si quieres tener más información o solicitas asesoria en algún caso o estudio
-      de cualquier tipo, dejanos tu información y con gusto te contactaremos.
-    </p>
-
-    <div style="text-align: center; margin: 0 auto; width: 35%; padding: 40px;">
-    <form>
-        <div class="form-group row">
-            <label for="inputPassword" class="col-sm-2 col-form-label">Nombre: </label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="inputPassword" placeholder="Nombre de Contacto">
-            </div>
-          </div>
-        <div class="form-group row">
-          <label for="staticEmail" class="col-sm-2 col-form-label">Email: </label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="staticEmail" placeholder="email@ejemplo.com">
-          </div>
+    <div class="row" [@show-works]="stateWorks">
+      <div class="col text-center d-flex flex-column justify-content-end">
+        <div style="padding-bottom: 90px;">
+          <h4> <strong>Buscanos en nuestras oficinas</strong> </h4>
+          <p>
+            Si prefieres atención personal y más cercana puedes acercarte a una de nuestras oficinas
+            en las que con gusto te recibiremos y atenderemos todas tus dudas y contarás con el mejor
+            personal para atenderte.
+          </p>
         </div>
-      </form>    
-      <br>
-    <button (click)="fillContact()" class="button button3">Contactame</button>
+      </div>
+      <div class="col text-center d-flex flex-column justify-content-end">
+        <div style="padding-top: 10px; position: initial;">
+          <img 
+           src="https://static.vecteezy.com/system/resources/previews/000/153/588/non_2x/vector-roadmap-location-map.jpg" 
+           alt="img-location"
+           style="width:85%; height: 55%;">
+        </div>
+      </div>
+    </div>
   </div>
-  </section>
+</section>

@@ -86,7 +86,7 @@ import {
     ]),
     trigger('moveHeader', [
       state('maxSize', style({
-        width: '50%',
+        width: '45%',
         transform: "translateX(10%)"
       })),
       state('minSize', style({
