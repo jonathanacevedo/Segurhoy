@@ -47,14 +47,14 @@
                 <a [ngx-scroll-to]="'home'" class="menu-option"> Inicio </a>
                 <hr [@animation-1]="state1" />
               </li>
-              <li (mouseover)="onMouseOver('2')" (mouseout)="onMouseOut('2')">
-                <a [ngx-scroll-to]="'company'" [ngx-scroll-to-offset]="-50" class="menu-option"> Compañia </a>
-                <hr [@animation-2]="state2" />
-              </li>
               <li (mouseover)="onMouseOver('4')" (mouseout)="onMouseOut('4')">
                   <a [ngx-scroll-to]="'work'" [ngx-scroll-to-offset]="-50" class="menu-option"> Servicios  </a>
                   <hr [@animation-4]="state4" />
                 </li>
+                <li (mouseover)="onMouseOver('2')" (mouseout)="onMouseOut('2')">
+                    <a [ngx-scroll-to]="'company'" [ngx-scroll-to-offset]="-50" class="menu-option"> Compañia </a>
+                    <hr [@animation-2]="state2" />
+                  </li>
               <li (mouseover)="onMouseOver('3')" (mouseout)="onMouseOut('3')">
                 <a [ngx-scroll-to]="'clients'" [ngx-scroll-to-offset]="-50" class="menu-option"> Clientes </a>
                 <hr [@animation-3]="state3" />

@@ -247,9 +247,7 @@ hr{
     height: 10%;
 }
 
-
-
- #info {
+#info {
     background: #f9f9f9;
     box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
     position: fixed;
@@ -257,3 +255,179 @@ hr{
     height: 120px;
     width: 100%;
 }
+
+
+/* .menu-toggle{
+    float: right;
+    display: none;
+} */
+
+.mynav{
+    display: block;
+
+}
+
+/* 
+@media (max-width: 1200px) {
+
+    .mynav{
+        display: block;
+        margin: 0px;
+        
+    }
+
+    .mynav ul{
+        margin: 0px;
+        flex-wrap: initial;
+    }
+
+    .container-header-buttons
+    {
+        margin-right: 0px;
+        margin-left: 0%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .mynav{
+        display: block;
+        margin: 0px;
+        
+    }
+
+    .mynav ul{
+        margin: 0px;
+        flex-wrap: initial;
+    }
+
+    .container-header-buttons
+    {
+        margin-right: 0px;
+        margin-left: 0%;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .mynav{
+        display: none;
+    }
+
+    .img-header
+    {
+        display: none;
+    }
+
+    .img-header-mobile
+    {
+        width: 70%;
+        height: 70%;
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .mynav{
+        display: none;
+    }
+
+    .img-header
+    {
+        display: none;
+    }
+
+    .img-header-mobile
+    {
+        width: 100%;
+        height: 100%;
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .mynav{
+        display: none;
+    }
+
+    .img-header
+    {
+        display: none;
+    }
+
+    .img-header-mobile
+    {
+        width: 130%;
+        height: 130%;
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .mynav{
+        display: none;
+    }
+
+    .img-header
+    {
+        display: none;
+    }
+
+    .img-header-mobile
+    {
+        width: 180%;
+        height: 180%;
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .menu-toggle{
+        display: block;
+    }
+
+    .mynav{
+        display: none;
+    }
+
+    .img-header
+    {
+        display: none;
+    }
+
+    .img-header-mobile
+    {
+        width: 150%;
+        height: 150%;
+        display: block;
+        cursor: pointer;
+    }
+}  */
+
