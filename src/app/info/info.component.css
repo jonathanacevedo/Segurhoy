@@ -1,21 +1,21 @@
 .info-container{
     color: #FFFFFF; 
     /* background: url(/../../assets/images/posibleFondoBanner2.png);  */
-    background: url(/../../assets/images/fondo-info5.jpg);
+    background: url(/../../assets/images/fondo-info6.jpg);
     /* background: url(https://images.pexels.com/photos/916017/pexels-photo-916017.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
     width: 100%; 
     text-align: center; 
     margin: 0 auto; 
     padding-top: 120px; 
     position: inherit;
+    font-family: OswaldExtraLight;
 }
-
 
 .image-logo-info{
     width: 20%; 
     height: 20%; 
     opacity: 1; 
-    margin: 50px;
+    margin: 20px;
 }
 
 h2 {
@@ -37,11 +37,12 @@ p{
 }
 
 .section-title.text-center{
-    font-size: 5rem;
+    font-size: 2.5rem;
     padding-bottom: 0px;
     margin-top: 10px;
     color: #FFFFFF;
     text-shadow: 1px 1px #000000;
+    position: inherit;
     /* text-shadow: 0 0 2px #FFFFFF; */
 }
 
@@ -57,3 +58,58 @@ p{
     background-color: #FFFFFF;
     margin: 1rem auto 1rem 0;
 }
+
+.button {
+    background-color: #f38c3d; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10%;
+  }
+
+  col-sm col-form-label{
+      font-size: 4rem;
+  }
+
+
+
+/* @media (min-width: 576px) {
+    .image-logo-info{
+        width: 20%; 
+        height: 20%; 
+        opacity: 1; 
+        margin: 50px;
+    }
+}
+@media (min-width: 768px) {
+    .image-logo-info{
+        width: 20%; 
+        height: 20%; 
+        opacity: 1; 
+        margin: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .image-logo-info{
+        width: 20%; 
+        height: 20%; 
+        opacity: 1; 
+        margin: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .image-logo-info{
+        width: 20%; 
+        height: 20%; 
+        opacity: 1; 
+        margin: 50px;
+    }
+} */
