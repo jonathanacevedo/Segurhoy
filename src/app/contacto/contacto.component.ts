@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import swal from 'sweetalert';
-import { discoverDirectives } from '@angular/core/src/render3/context_discovery';
 
 
 @Component({
@@ -10,16 +9,34 @@ import { discoverDirectives } from '@angular/core/src/render3/context_discovery'
 })
 export class ContactoComponent implements OnInit {
 
+  public title: string = '¡Acá Estamos!';
+  public lat: number = 4.637908108388191;
+  public lng: number = -74.07700025018516;
+
+  public imagen: any;
+
   constructor() { }
 
   ngOnInit() {
   }
 
 
-  fillContact(){
+  fillContact() {
 
-    //Validaciones de Campos
-    swal("Listo!", "Te contactaremos lo antes posible", "success");
+    this.imagen= document.createElement("img");
+    this.imagen.src = "https://img.icons8.com/color/2x/family.png";
+
+    swal({
+ 
+      title: "Are you sure?",
+      text: "Are you sure that you want to leave this page?",
+      dangerMode: false,
+      content: this.imagen
+    });
+
+
+    //Realizar validación de datos
+    // swal("Listo!", "Te contactaremos lo antes posible", "success");
 
   }
 }

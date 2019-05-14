@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import swal from 'sweetalert';
 import {
   trigger,
   state,
@@ -6,6 +7,7 @@ import {
   animate,
   transition
 } from '@angular/animations';
+
 
 @Component({
   selector: 'app-contentcard',
@@ -27,6 +29,7 @@ import {
 export class ContentcardComponent implements OnInit {
 
   public stateServices : string = "hide";
+  public imagen: any;
 
   constructor() { }
 
@@ -39,6 +42,20 @@ export class ContentcardComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+
+  showModal(){
+    this.imagen= document.createElement("img");
+    this.imagen.src = "https://img.icons8.com/color/2x/family.png";
+
+    swal({
+ 
+      title: "Are you sure?",
+      text: "Are you sure that you want to leave this page?",
+      dangerMode: false,
+      content: this.imagen
+    });
   }
 
 }

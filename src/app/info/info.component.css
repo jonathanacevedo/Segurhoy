@@ -1,8 +1,6 @@
 .info-container{
     color: #FFFFFF; 
-    /* background: url(/../../assets/images/posibleFondoBanner2.png);  */
     background: url(/../../assets/images/fondo-info6.jpg);
-    /* background: url(https://images.pexels.com/photos/916017/pexels-photo-916017.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
     width: 100%; 
     text-align: center; 
     margin: 0 auto; 
@@ -74,7 +72,7 @@ p{
   }
 
 
-  @media (min-width: 1200px) {
+@media (min-width: 1200px) {
     .image-logo-info{
         width: 20%; 
         height: 20%;

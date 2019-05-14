@@ -92,7 +92,6 @@ export class HomeComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-    console.log("Valor del scroll: "+window.pageYOffset)
     
     if (window.pageYOffset < 400) {
 

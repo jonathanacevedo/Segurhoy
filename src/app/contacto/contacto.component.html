@@ -1,9 +1,7 @@
 <section class="py-7 text-center border-bottom">
   <div class="container">
-    <div class="wrapper">
-      <h2 class="section-title text-center">¡Contactanos!</h2>
-    </div>
-    <div class="row">
+    <h2 class="section-title text-center">¡Contactanos!</h2>
+    <!-- <div class="row">
       <div class="col text-center d-flex flex-column justify-content-end">
         <div style="padding-bottom: 90px;">
           <h4> <strong>Ingresa algunos datos personales</strong> </h4>
@@ -54,13 +52,65 @@
         </div>
       </div>
       <div class="col text-center d-flex flex-column justify-content-end">
-        <div style="padding-top: 10px; position: initial;">
-          <img 
-           src="https://static.vecteezy.com/system/resources/previews/000/153/588/non_2x/vector-roadmap-location-map.jpg" 
-           alt="img-location"
-           style="width:85%; height: 55%;">
+        <div style="padding-top: 10px;">
+          <h4> <strong>{{ title }}</strong> </h4>
+          <agm-map [latitude]="lat" [longitude]="lng" [zoom]="16">
+            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+          </agm-map>
         </div>
       </div>
+    </div> -->
+
+    <div class="container">
+      <div class="row" style="padding-top: 40px;">
+        <div class="col-sm">
+          <h4> <strong>Ingresa algunos datos personales</strong> </h4>
+          <p>
+            Si quieres tener más información o solicitas asesoria en algún caso o estudio
+            de cualquier tipo, dejanos tu información y con gusto te contactaremos lo antes posible.
+          </p>
+        </div>
+        <div class="col-sm">
+          <form>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-2 col-form-label">Nombre: </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputPassword" placeholder="Nombre de Contacto">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-2 col-form-label">Email: </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="staticEmail" placeholder="email@ejemplo.com">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-2 col-form-label">Teléfono: </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="staticEmail" placeholder="Teléfono">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row"  style="padding-top: 40px;">
+          <div class="col-sm">
+              <h4> <strong>Buscanos en nuestras oficinas</strong> </h4>
+              <p>
+                Si prefieres atención personal y más cercana puedes acercarte a una de nuestras oficinas
+                en las que con gusto te recibiremos y atenderemos todas tus dudas y contarás con el mejor
+                personal para atenderte.
+              </p>
+          </div>
+          <div class="col-sm">
+              <div>
+                  <h4> <strong>{{ title }}</strong> </h4>
+                  <agm-map [latitude]="lat" [longitude]="lng" [zoom]="16">
+                    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                  </agm-map>
+                </div>
+          </div>
+        </div>
     </div>
   </div>
 </section>

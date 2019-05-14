@@ -98,10 +98,10 @@ import {
     ]),
     trigger('moveInfoHeader', [
       state('up-bar', style({
-        margin: '20px'
+        'margin': '20px'
       })),
       state('down-bar', style({
-        margin: '0px'
+        'margin': '0px'
       })),
       transition('up-bar => down-bar', animate('500ms ease-out')),
       transition('down-bar => up-bar', animate('500ms ease-in')),
@@ -146,9 +146,7 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScrollPage(e) {
-    console.log("Valor del scroll: " + window.pageYOffset)
     if (window.pageYOffset > 0 && window.pageYOffset < 640) {
-      console.log("En la condición!");
       this.state1 = 'show-1';
     }
   }
@@ -156,7 +154,6 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-    console.log("Valor del Scroll : " + window.pageYOffset);
 
     if (window.pageYOffset > 110) {
       this.state = "minSize";

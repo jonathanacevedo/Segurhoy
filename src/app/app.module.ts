@@ -17,6 +17,11 @@ import { WorkComponent } from './work/work.component';
 import { InfoComponent } from './info/info.component';
 import { ContactoComponent } from './contacto/contacto.component';
 
+import { AgmCoreModule } from '@agm/core';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +39,16 @@ import { ContactoComponent } from './contacto/contacto.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyArw-1j35p7C97HU6Eq38XohyEANkcdpD0'
+    }),
+    SweetAlert2Module.forRoot({
+      buttonsStyling: false,
+      customClass: 'modal-content',
+      confirmButtonClass: 'btn btn-primary',
+      cancelButtonClass: 'btn'
+  })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,8 +12,9 @@
     width: 100%;
     height: 10%;
     display: inline-block;
-    background: url(/../../assets/images/fondo-info1.jpg);
-    background: url(https://images.pexels.com/photos/260689/pexels-photo-260689.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background: url(../../assets/images/fondo-info1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 50px 0px;
     padding-top: 40px;
     color: #ffffff;
@@ -39,7 +40,7 @@
     margin: 1rem auto 1rem 0;
 }
 
-* {
+/* * {
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
@@ -47,7 +48,7 @@
 
 div {
     display: block;
-}
+} */
 
 .card-container ul li:nth-child(3n+1) {
     margin-left: 0px;
@@ -81,12 +82,6 @@ div {
     padding: 25px;
 }
 
-* {
-    margin: 0;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 li {
     display: list-item;
     border-radius: 10%;
@@ -103,6 +98,47 @@ li {
     text-align: center;
 }
 
+
+/* Mias */
+ul{
+    float: left;
+    width: 100%;
+    display: inline-block;
+    list-style-type: none;
+    margin: 28px 0px 0px 0px;
+    text-align: center;  
+}
+
+ul li {
+    float: left;
+    width: 32%;
+    margin: 11px;
+    /* background: rgba(41,73,122, 0.85); */
+    background: rgba(16,38,79, 0.85);
+    padding: 25px;
+}
+
+ul li {
+    margin: 9px;
+}
+
+.card-item{
+    width: 32%;
+    margin: 11px;
+    background: rgba(16,38,79, 0.85);
+    padding: 25px;
+    width: 100%;
+    display: inline-block;
+    list-style-type: none;
+    margin: 28px 0px 0px 0px;
+    text-align: center;  
+    display: list-item;
+    border-radius: 10%;
+    text-align: -webkit-match-parent;
+    
+}
+
+/* Fin Mias */
 h1{
     font-size: 1.8rem;
 }
@@ -128,6 +164,7 @@ ul, menu, dir {
     margin: 0 auto;
     border: 1px solid #fff;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 
@@ -159,4 +196,3 @@ ul.resp-tabs-list, p {
     margin: 0px;
     padding: 0px;
 }
-

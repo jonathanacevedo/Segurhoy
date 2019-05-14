@@ -1,9 +1,10 @@
   <div class="main-header" id="navbar">
 
-    <div class="row" id="info" [@resizeHeader]="stateH" style="height: auto;">
+    <div class="row" id="info" [@resizeHeader]="stateH" style="height: auto; margin: 0 auto;">
       <div class="column left">
         <div class="header-container">
           <img [ngx-scroll-to]="'home'" class="img-header" [@moveHeader]="state" src="../../assets/images/Segurhoy_CompletoLogo2.png" alt="loogoSegurhoy">
+          <img [ngx-scroll-to]="'home'" class="img-header-mobile" src="../../assets/images/Segurhoy_CompletoLogo2.png" alt="loogoSegurhoy">
           <!-- <img class="img-header" [@moveInfoHeader]="stateInfo" src="../../assets/images/Segurhoy_InfoLogo.png" alt="loogoSegurhoy"> -->
         </div>
       </div>
@@ -41,6 +42,8 @@
       <div class="animated fadeInDown" id="navbar">
       -->
 
+      <img class="mobile-menu" src="../../assets/images/icon-menu.png" alt="icon-menu">
+
           <nav class="mynav">
             <ul [@moveInfoHeader]="stateInfo">
               <li (mouseover)="onMouseOver('1')" (mouseout)="onMouseOut('1')">
@@ -65,9 +68,7 @@
               </li>
             </ul>
           </nav>
-
           <span class="target"></span>
-
         </div>
       </div>
 

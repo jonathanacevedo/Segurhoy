@@ -1,9 +1,8 @@
 <div class="card-container">
-  <div class="container"></div>
   <h1 class="section-title text-center" style="text-shadow: 2px 2px 20px #000000;">Algunos de nuestros servicios</h1>
-  <ul [@show-services]="stateServices">
+  <!-- <ul [@show-services]="stateServices">
     <li>
-      <div class="pic-2">
+      <div class="pic-2" (click)="showModal()">
         <img src="../../assets/images/family.png">
       </div>
       <br>
@@ -33,11 +32,10 @@
       <h3>Asegura Tu Vivienda</h3>
       <p>
         Sabemos que tu vivienda y lo que tienes dentro de ella lo has conseguido con esfuerzo,
-        por eso protegemos tu hogar contra todo lo que le pued​a pasar.​​​​​​ 
+        por eso protegemos tu hogar contra todo lo que le pued​a pasar.​​​​​​
       </p>
     </li>
-  </ul>
-
+  </ul> 
   <ul>
     <li>
       <div class="pic-2">
@@ -46,7 +44,7 @@
       <br>
       <h3>Asegura Tu Movilidad</h3>
       <p>
-        Sabemos que cuando compras un carro quieres también seguridad y protección 
+        Sabemos que cuando compras un carro quieres también seguridad y protección
         para ti y para quienes te acompañan en el camino.
       </p>
     </li>
@@ -57,9 +55,9 @@
       <br>
       <h3>Seguros para bienes y patrimonio</h3>
       <p>
-          Los recursos representan una inversión importante para las compañías, 
-          por ello es necesario que cuenten con el mejor respaldo ante futuros inconvenientes 
-          que puedan perjudicarlos.
+        Los recursos representan una inversión importante para las compañías,
+        por ello es necesario que cuenten con el mejor respaldo ante futuros inconvenientes
+        que puedan perjudicarlos.
       </p>
     </li>
     <li>
@@ -69,10 +67,98 @@
       <br>
       <h3>Seguros para empleados</h3>
       <p>
-          Que sus empleados adquieran una cultura de ahorro y aseguren los ingresos 
-          que complementarán su pensión, está en sus manos, gracias al Seguro de​ 
-          Pensión que ofrece SURA.
+        Que sus empleados adquieran una cultura de ahorro y aseguren los ingresos
+        que complementarán su pensión, está en sus manos, gracias al Seguro de​
+        Pensión que ofrece SURA.
       </p>
     </li>
-  </ul>
+  </ul> -->
+
+  <div class="container" style="display:table-cell; width: 90%">
+    <div class="row">
+      <div class="col-sm" style="position: inherit;">
+        <div class="card-item">
+          <div class="pic-2" (click)="showModal()">
+            <img src="../../assets/images/family.png">
+          </div>
+          <br>
+          <h3>Asegura Tu Vida</h3>
+          <p style="margin: 20px;">
+            Porque sabemos que tus sueños y tu autonomía son esenciales para que te sientas pleno, te ac​​​ompañamos
+            incondicionalmente con el fin de que vivas intensamente​ cada moment​​o.​​
+          </p>
+        </div>
+      </div>
+      <div class="col-sm" style="position: inherit;">
+        <div class="card-item">
+          <div class="pic-2">
+            <img src="../../assets/images/salud.png">
+          </div>
+          <br>
+          <h3>Asegura Tu Salud</h3>
+          <p>
+            Entre más conocemos de ti, más podemos cuidarte. Por eso,
+            ponemos a tu disposición diferentes programas y servicios que te cuidan a ti y a los que más quieres.
+            Conoce más de estos servicios para tu bienestar.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm"  style="position: inherit;">
+        <div class="card-item">
+          <div class="pic-2">
+            <img src="../../assets/images/house.png">
+          </div>
+          <br>
+          <h3>Asegura Tu Vivienda</h3>
+          <p>
+            Sabemos que tu vivienda y lo que tienes dentro de ella lo has conseguido con esfuerzo,
+            por eso protegemos tu hogar contra todo lo que le pued​a pasar.​​​​​​
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm" style="position: inherit;">
+        <div class="card-item">
+          <div class="pic-2">
+            <img src="../../assets/images/car.png">
+          </div>
+          <br>
+          <h3>Asegura Tu Movilidad</h3>
+          <p>
+            Sabemos que cuando compras un carro quieres también seguridad y protección
+            para ti y para quienes te acompañan en el camino.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm" style="position: inherit;">
+        <div class="card-item">
+          <div class="pic-2">
+            <img src="../../assets/images/bill.png">
+          </div>
+          <br>
+          <h3>Seguros para bienes y patrimonio</h3>
+          <p>
+            Los recursos representan una inversión importante para las compañías,
+            por ello es necesario que cuenten con el mejor respaldo ante futuros inconvenientes
+            que puedan perjudicarlos.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm" style="position: inherit;">
+        <div class="card-item">
+          <div class="pic-2">
+            <img src="../../assets/images/worker.png">
+          </div>
+          <br>
+          <h3>Seguros para empleados</h3>
+          <p>
+            Que sus empleados adquieran una cultura de ahorro y aseguren los ingresos
+            que complementarán su pensión, está en sus manos, gracias al Seguro de​
+            Pensión que ofrece SURA.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
