@@ -94,7 +94,7 @@
         </div>
       </div>
       <div class="row"  style="padding-top: 40px;">
-          <div class="col-sm">
+          <div class="col-sm" style="position: inherit;">
               <h4> <strong>Buscanos en nuestras oficinas</strong> </h4>
               <p>
                 Si prefieres atención personal y más cercana puedes acercarte a una de nuestras oficinas
@@ -102,8 +102,8 @@
                 personal para atenderte.
               </p>
           </div>
-          <div class="col-sm">
-              <div>
+          <div class="col-sm" style="position: inherit;">
+              <div style="position: inherit;">
                   <h4> <strong>{{ title }}</strong> </h4>
                   <agm-map [latitude]="lat" [longitude]="lng" [zoom]="16">
                     <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>

@@ -74,11 +74,11 @@
     </li>
   </ul> -->
 
-  <div class="container" style="display:table-cell; width: 90%">
+  <div class="container" style="width: 85%; margin: 0 auto;">
     <div class="row">
       <div class="col-sm" style="position: inherit;">
         <div class="card-item">
-          <div class="pic-2" (click)="showModal()">
+          <div class="pic-2" (click)="showModal('life')">
             <img src="../../assets/images/family.png">
           </div>
           <br>
@@ -91,7 +91,7 @@
       </div>
       <div class="col-sm" style="position: inherit;">
         <div class="card-item">
-          <div class="pic-2">
+          <div class="pic-2" (click)="showModal('health')">
             <img src="../../assets/images/salud.png">
           </div>
           <br>
@@ -99,13 +99,15 @@
           <p>
             Entre más conocemos de ti, más podemos cuidarte. Por eso,
             ponemos a tu disposición diferentes programas y servicios que te cuidan a ti y a los que más quieres.
-            Conoce más de estos servicios para tu bienestar.
+            Conoce más de estos servicios para tu bienestar y tu tranquilidad.
           </p>
         </div>
       </div>
-      <div class="col-sm"  style="position: inherit;">
+    </div>
+    <div class="row">
+      <div class="col-sm" style="position: inherit;">
         <div class="card-item">
-          <div class="pic-2">
+          <div class="pic-2" (click)="showModal('house')">
             <img src="../../assets/images/house.png">
           </div>
           <br>
@@ -116,11 +118,9 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="row">
       <div class="col-sm" style="position: inherit;">
         <div class="card-item">
-          <div class="pic-2">
+          <div class="pic-2" (click)="showModal('mobility')">
             <img src="../../assets/images/car.png">
           </div>
           <br>
@@ -131,9 +131,12 @@
           </p>
         </div>
       </div>
+    </div>
+    <div class="row">
+
       <div class="col-sm" style="position: inherit;">
         <div class="card-item">
-          <div class="pic-2">
+          <div class="pic-2" (click)="showModal('heritage')">
             <img src="../../assets/images/bill.png">
           </div>
           <br>
@@ -147,7 +150,7 @@
       </div>
       <div class="col-sm" style="position: inherit;">
         <div class="card-item">
-          <div class="pic-2">
+          <div class="pic-2" (click)="showModal('employees')">
             <img src="../../assets/images/worker.png">
           </div>
           <br>
@@ -159,6 +162,35 @@
           </p>
         </div>
       </div>
+    </div>
+    <div class="row">
+      <div class="col-sm" style="position: inherit;">
+        <div class="card-item">
+          <div class="pic-2" (click)="showModal('arl')">
+            <img src="../../assets/images/icon-arl.png">
+          </div>
+          <br>
+          <h3>A.R.L</h3>
+          <p>
+            ARL, Administradora de Riesgos Laborales. Su principal función es prevenir,
+            atender y proteger a los trabajadores de los efectos causados en el trabajo.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm" style="position: inherit;">
+        <div class="card-item">
+          <div class="pic-2" (click)="showModal('others')">
+            <img src="../../assets/images/icon-dots.png">
+          </div>
+          <br>
+          <h3>Otros Seguros</h3>
+          <p>
+            Otros tipos diferentes de servicios que seguramente te ayudarán a estar más tranquilo y
+            protegido para que siempre puedas confiar.
+          </p>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
