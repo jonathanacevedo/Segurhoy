@@ -36,15 +36,11 @@
       </div>-->
 
 
-     
-      <!-- Crear un header que se mostrará cuando nos movamos en la página, con este elemento se mostrará 
-        por código en el body (Ojo que se dañó el banner con los servicios, mirar la animación del body)
-      <div class="animated fadeInDown" id="navbar">
-      -->
+<!--       Cambio de clase para navegación móvil mynav(cerrado), mynav active(abierto) -->
 
-      <img class="mobile-menu" src="../../assets/images/icon-menu.png" alt="icon-menu">
 
-          <nav class="mynav">
+      <img class="mobile-menu" src="../../assets/images/icon-menu.png" (click)="toggleMenu()" alt="icon-menu">
+          <nav [className]="openMenu ? 'mynav active' : 'mynav'">
             <ul [@moveInfoHeader]="stateInfo">
               <li (mouseover)="onMouseOver('1')" (mouseout)="onMouseOut('1')">
                 <a [ngx-scroll-to]="'home'" class="menu-option"> Inicio </a>
@@ -62,7 +58,7 @@
                 <a [ngx-scroll-to]="'clients'" [ngx-scroll-to-offset]="-50" class="menu-option"> Clientes </a>
                 <hr [@animation-3]="state3" />
               </li>
-              <li (mouseover)="onMouseOver('5')" (mouseout)="onMouseOut('5')">
+              <li (mouseover)="onMouseOver('5')" (mouseout)="onMouseOut('5')" class="contact-menu">
                 <a [ngx-scroll-to]="'contact'" [ngx-scroll-to-offset]="-50" class="menu-option"> Contacto </a>
                 <hr [@animation-5]="state5" />
               </li>

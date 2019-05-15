@@ -163,7 +163,7 @@
     /* font-weight: bold; */
     text-shadow: 0.2px 0.2px #000000;
     text-decoration: none;
-    padding: 7px 15px;
+    padding: 5px 15px;
     cursor: pointer;
   }
    
@@ -242,14 +242,11 @@ hr{
 
 .mobile-menu{
     float: right;
-    display: none;
-}
-
-.mynav{
     display: block;
 }
 
-@media (max-width: 992px) {
+
+@media (max-width: 998px) {
     .img-header
     {
         display: none;
@@ -261,8 +258,40 @@ hr{
         height: 60%;
         display: block;
     }
-}
 
+    .mynav{
+        right: 0;
+        left: -100%;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #FFFFFF;
+        top: 50px;
+        transition: 0.5s;
+    }
+
+    .mynav.active{
+        left: 0;
+    }
+
+    .mynav ul{
+        display: block;
+        text-align: center;
+    }
+    
+    .mynav ul li a {
+        border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+
+    .contact-menu{
+        margin-right: 20px;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+}
+/* 
 @media (max-width: 768px) {
     .img-header
     {
@@ -331,7 +360,12 @@ hr{
         height: 200%;
         display: block;
     }
-}
+} */
+
+
+/* HASTA ACÁ EL RESPONSIVE FINAL LISTO */
+
+
 
 /* @media (min-width: 992px) {
     .img-header

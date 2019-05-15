@@ -98,10 +98,10 @@ import {
     ]),
     trigger('moveInfoHeader', [
       state('up-bar', style({
-        'margin': '20px'
+        'margin-top': '10px'
       })),
       state('down-bar', style({
-        'margin': '0px'
+        'margin-top': '0px'
       })),
       transition('up-bar => down-bar', animate('500ms ease-out')),
       transition('down-bar => up-bar', animate('500ms ease-in')),
@@ -135,6 +135,8 @@ export class HeaderComponent implements OnInit {
   public state3: any;
   public state4: any;
   public state5: any;
+
+  public openMenu: boolean = false;
 
   constructor(public el: ElementRef, @Inject(DOCUMENT) document) {
 
@@ -227,5 +229,13 @@ export class HeaderComponent implements OnInit {
     this.state4 = 'hide-4';
     this.state5 = 'hide-5';
 
+  }
+
+  toggleMenu(){
+    if(this.openMenu == true){
+      this.openMenu = false;
+    }  else {
+      this.openMenu = true;
+    }
   }
 }

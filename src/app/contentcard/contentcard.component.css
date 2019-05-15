@@ -166,6 +166,12 @@ ul, menu, dir {
     border: 1px solid #fff;
     border-radius: 50%;
     cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.pic-2:hover{
+    border: 3px solid #ffffff;
 }
 
 
