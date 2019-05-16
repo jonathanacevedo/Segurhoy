@@ -139,7 +139,7 @@ export class HeaderComponent implements OnInit {
   public openMenu: boolean = false;
 
   constructor(public el: ElementRef, @Inject(DOCUMENT) document) {
-
+    
   }
 
   ngOnInit() {
@@ -228,7 +228,6 @@ export class HeaderComponent implements OnInit {
     this.state3 = 'hide-3';
     this.state4 = 'hide-4';
     this.state5 = 'hide-5';
-
   }
 
   toggleMenu(){
@@ -237,5 +236,13 @@ export class HeaderComponent implements OnInit {
     }  else {
       this.openMenu = true;
     }
+  }
+
+  setHeightMenu(heightVal: any) {
+
+    let styles = {
+      'top': heightVal+'px'
+    };
+    return styles;
   }
 }

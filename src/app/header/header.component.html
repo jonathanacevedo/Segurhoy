@@ -1,17 +1,19 @@
-  <div class="main-header" id="navbar">
+<div class="main-header" id="navbar">
 
-    <div class="row" id="info" [@resizeHeader]="stateH" style="height: auto; margin: 0 auto;">
-      <div class="column left">
-        <div class="header-container">
-          <img [ngx-scroll-to]="'home'" class="img-header" [@moveHeader]="state" src="../../assets/images/Segurhoy_CompletoLogo2.png" alt="loogoSegurhoy">
-          <img [ngx-scroll-to]="'home'" class="img-header-mobile" src="../../assets/images/Segurhoy_CompletoLogo2.png" alt="loogoSegurhoy">
-          <!-- <img class="img-header" [@moveInfoHeader]="stateInfo" src="../../assets/images/Segurhoy_InfoLogo.png" alt="loogoSegurhoy"> -->
-        </div>
+  <div class="row" id="info" [@resizeHeader]="stateH" style="height: auto; margin: 0 auto;" #info>
+    <div class="column left">
+      <div class="header-container">
+        <img [ngx-scroll-to]="'home'" class="img-header" [@moveHeader]="state"
+          src="../../assets/images/Segurhoy_CompletoLogo2.png" alt="loogoSegurhoy">
+        <img [ngx-scroll-to]="'home'" class="img-header-mobile" src="../../assets/images/Segurhoy_CompletoLogo2.png"
+          alt="loogoSegurhoy">
+        <!-- <img class="img-header" [@moveInfoHeader]="stateInfo" src="../../assets/images/Segurhoy_InfoLogo.png" alt="loogoSegurhoy"> -->
       </div>
-      <div class="column right">
-        <div class="container-header-buttons">
+    </div>
+    <div class="column right">
+      <div class="container-header-buttons">
 
-          <!--<ul class="nav-items">
+        <!--<ul class="nav-items">
           <li>
             <a>
               Casos
@@ -36,45 +38,49 @@
       </div>-->
 
 
-<!--       Cambio de clase para navegación móvil mynav(cerrado), mynav active(abierto) -->
+        <!--       Cambio de clase para navegación móvil mynav(cerrado), mynav active(abierto) -->
 
 
-      <img class="mobile-menu" src="../../assets/images/icon-menu.png" (click)="toggleMenu()" alt="icon-menu">
-          <nav [className]="openMenu ? 'mynav active' : 'mynav'">
-            <ul [@moveInfoHeader]="stateInfo">
-              <li (mouseover)="onMouseOver('1')" (mouseout)="onMouseOut('1')">
-                <a [ngx-scroll-to]="'home'" class="menu-option"> Inicio </a>
-                <hr [@animation-1]="state1" />
-              </li>
-              <li (mouseover)="onMouseOver('4')" (mouseout)="onMouseOut('4')">
-                  <a [ngx-scroll-to]="'work'" [ngx-scroll-to-offset]="-50" class="menu-option"> Servicios  </a>
-                  <hr [@animation-4]="state4" />
-                </li>
-                <li (mouseover)="onMouseOver('2')" (mouseout)="onMouseOut('2')">
-                    <a [ngx-scroll-to]="'company'" [ngx-scroll-to-offset]="-50" class="menu-option"> Compañia </a>
-                    <hr [@animation-2]="state2" />
-                  </li>
-              <li (mouseover)="onMouseOver('3')" (mouseout)="onMouseOut('3')">
-                <a [ngx-scroll-to]="'clients'" [ngx-scroll-to-offset]="-50" class="menu-option"> Clientes </a>
-                <hr [@animation-3]="state3" />
-              </li>
-              <li (mouseover)="onMouseOver('5')" (mouseout)="onMouseOut('5')" class="contact-menu">
-                <a [ngx-scroll-to]="'contact'" [ngx-scroll-to-offset]="-50" class="menu-option"> Contacto </a>
-                <hr [@animation-5]="state5" />
-              </li>
-            </ul>
-          </nav>
-          <span class="target"></span>
-        </div>
+        <img class="mobile-menu" src="../../assets/images/icon-menu.png" (click)="toggleMenu()" alt="icon-menu">
+        <nav [className]="openMenu ? 'mynav active' : 'mynav'" [ngStyle]="setHeightMenu(info.offsetHeight)">
+          <ul [@moveInfoHeader]="stateInfo">
+            <li (mouseover)="onMouseOver('1')" (mouseout)="onMouseOut('1')">
+              <a [ngx-scroll-to]="'home'" (click)="toggleMenu()" class="menu-option"> Inicio </a>
+              <hr [@animation-1]="state1" />
+            </li>
+            <li (mouseover)="onMouseOver('4')" (mouseout)="onMouseOut('4')">
+              <a [ngx-scroll-to]="'work'" [ngx-scroll-to-offset]="-40" (click)="toggleMenu()" class="menu-option">
+                Servicios </a>
+              <hr [@animation-4]="state4" />
+            </li>
+            <li (mouseover)="onMouseOver('2')" (mouseout)="onMouseOut('2')">
+              <a [ngx-scroll-to]="'company'" [ngx-scroll-to-offset]="-50" (click)="toggleMenu()" class="menu-option">
+                Compañia </a>
+              <hr [@animation-2]="state2" />
+            </li>
+            <li (mouseover)="onMouseOver('3')" (mouseout)="onMouseOut('3')">
+              <a [ngx-scroll-to]="'clients'" [ngx-scroll-to-offset]="-50" (click)="toggleMenu()" class="menu-option">
+                Clientes </a>
+              <hr [@animation-3]="state3" />
+            </li>
+            <li (mouseover)="onMouseOver('5')" (mouseout)="onMouseOut('5')" class="contact-menu">
+              <a [ngx-scroll-to]="'contact'" [ngx-scroll-to-offset]="-50" (click)="toggleMenu()" class="menu-option">
+                Contacto </a>
+              <hr [@animation-5]="state5" />
+            </li>
+          </ul>
+        </nav>
+        <span class="target"></span>
       </div>
+    </div>
 
-      <!-- <div class="container-down-image">
+    <!-- <div class="container-down-image">
         <img class="img-down-header" src="../../assets/images/posibleBanner2.png" alt="header-image">
       </div> -->
 
-    </div>
-
   </div>
+
+</div>
 
 <!--
 
