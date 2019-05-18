@@ -16,6 +16,11 @@
     background: url(../../assets/images/fondo-servicios1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
     padding: 50px 0px;
     padding-top: 40px;
     color: #ffffff;
@@ -48,7 +53,7 @@
 }
 
 div {
-    display: block;
+    display:  inline-block;
 } */
 
 .card-container ul li:nth-child(3n+1) {
@@ -123,7 +128,7 @@ ul li {
     margin: 9px;
 }
 
-.card-item{
+.col-sm{
     width: 32%;
     margin: 11px;
     background: rgba(16,38,79, 0.85);
@@ -131,12 +136,12 @@ ul li {
     width: 100%;
     display: inline-block;
     list-style-type: none;
-    margin: 28px 0px 0px 0px;
+    margin: 30px 20px 0px 20px;
     text-align: center;  
     display: list-item;
+    flex: 1;
     /* border-radius: 10%; */
     text-align: -webkit-match-parent;
-    
 }
 
 /* Fin Mias */
@@ -202,4 +207,18 @@ ul, menu, dir {
 ul.resp-tabs-list, p {
     margin: 0px;
     padding: 0px;
+}
+
+.note{
+    background-color: #000000;
+    color: #FFFFFF;
+
+}
+
+@media (max-width: 780px) {
+
+    .col-sm{
+        margin: 30px 5px 0px 5px; 
+    }
+
 }

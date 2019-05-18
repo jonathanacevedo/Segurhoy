@@ -45,26 +45,26 @@
         <nav [className]="openMenu ? 'mynav active' : 'mynav'" [ngStyle]="setHeightMenu(info.offsetHeight)">
           <ul [@moveInfoHeader]="stateInfo">
             <li (mouseover)="onMouseOver('1')" (mouseout)="onMouseOut('1')">
-              <a [ngx-scroll-to]="'home'" (click)="toggleMenu()" class="menu-option"> Inicio </a>
+              <a [ngx-scroll-to]="'home'" (click)="toggleMenuResponsive()" class="menu-option"> Inicio </a>
               <hr [@animation-1]="state1" />
             </li>
             <li (mouseover)="onMouseOver('4')" (mouseout)="onMouseOut('4')">
-              <a [ngx-scroll-to]="'work'" [ngx-scroll-to-offset]="-40" (click)="toggleMenu()" class="menu-option">
+              <a [ngx-scroll-to]="'work'" [ngx-scroll-to-offset]="-40" (click)="toggleMenuResponsive()" class="menu-option">
                 Servicios </a>
               <hr [@animation-4]="state4" />
             </li>
             <li (mouseover)="onMouseOver('2')" (mouseout)="onMouseOut('2')">
-              <a [ngx-scroll-to]="'company'" [ngx-scroll-to-offset]="-50" (click)="toggleMenu()" class="menu-option">
+              <a [ngx-scroll-to]="'company'" [ngx-scroll-to-offset]="-50" (click)="toggleMenuResponsive()" class="menu-option">
                 Compañia </a>
               <hr [@animation-2]="state2" />
             </li>
             <li (mouseover)="onMouseOver('3')" (mouseout)="onMouseOut('3')">
-              <a [ngx-scroll-to]="'clients'" [ngx-scroll-to-offset]="-50" (click)="toggleMenu()" class="menu-option">
+              <a [ngx-scroll-to]="'clients'" [ngx-scroll-to-offset]="-50" (click)="toggleMenuResponsive()" class="menu-option">
                 Clientes </a>
               <hr [@animation-3]="state3" />
             </li>
             <li (mouseover)="onMouseOver('5')" (mouseout)="onMouseOut('5')" class="contact-menu">
-              <a [ngx-scroll-to]="'contact'" [ngx-scroll-to-offset]="-50" (click)="toggleMenu()" class="menu-option">
+              <a [ngx-scroll-to]="'contact'" [ngx-scroll-to-offset]="-50" (click)="toggleMenuResponsive()" class="menu-option">
                 Contacto </a>
               <hr [@animation-5]="state5" />
             </li>

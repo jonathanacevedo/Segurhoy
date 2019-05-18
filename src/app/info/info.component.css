@@ -72,10 +72,14 @@ p{
   }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1700px) {
     .image-logo-info{
         width: 20%; 
         height: 20%;
+    }
+
+    .info-container{
+        background: url(../../assets/images/nuevoBannerExpandidoMaxRes.jpg);
     }
 } 
 

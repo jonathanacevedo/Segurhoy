@@ -74,121 +74,146 @@
     </li>
   </ul> -->
 
-  <div class="container" style="width: 85%; margin: 0 auto;">
-    <div class="row">
-      <div class="col-sm" style="position: inherit;">
-        <div class="card-item">
-          <div class="pic-2" (click)="showModal('life')">
-            <img src="../../assets/images/family.png">
-          </div>
-          <br>
-          <h3>Asegura Tu Vida</h3>
-          <p style="margin: 20px;">
-            Porque sabemos que tus sueños y tu autonomía son esenciales para que te sientas pleno, te ac​​​ompañamos
-            incondicionalmente con el fin de que vivas intensamente​ cada moment​​o.​​
-          </p>
+  <div class="container" style="width: 85%; margin: 0 auto; ">
+    <div class="row" style="display: flex;">
+      <div class="col-sm">
+        <div class="pic-2" (click)="showModal('life')">
+          <img src="../../assets/images/family.png">
         </div>
+        <br>
+        <h3>Asegura Tu Vida</h3>
+        <p style="margin: 20px;">
+          Porque sabemos que tus sueños y tu autonomía son esenciales para que te sientas pleno, te ac​​​ompañamos
+          incondicionalmente con el fin de que vivas intensamente​ cada moment​​o.​​
+        </p>
       </div>
-      <div class="col-sm" style="position: inherit;">
-        <div class="card-item">
-          <div class="pic-2" (click)="showModal('health')">
-            <img src="../../assets/images/salud.png">
-          </div>
-          <br>
-          <h3>Asegura Tu Salud</h3>
-          <p>
-            Entre más conocemos de ti, más podemos cuidarte. Por eso,
-            ponemos a tu disposición diferentes programas y servicios que te cuidan a ti y a los que más quieres.
-            Conoce más de estos servicios para tu bienestar y tu tranquilidad.
-          </p>
+      <div class="col-sm">
+        <div class="pic-2" (click)="showModal('health')">
+          <img src="../../assets/images/salud.png">
         </div>
+        <br>
+        <h3>Asegura Tu Salud</h3>
+        <p>
+          Entre más conocemos de ti, más podemos cuidarte. Por eso,
+          ponemos a tu disposición diferentes programas y servicios que te cuidan a ti y a los que más quieres.
+          Conoce más de estos servicios para tu bienestar y tu tranquilidad.
+        </p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm" style="position: inherit;">
-        <div class="card-item">
-          <div class="pic-2" (click)="showModal('house')">
-            <img src="../../assets/images/house.png">
-          </div>
-          <br>
-          <h3>Asegura Tu Vivienda</h3>
-          <p>
-            Sabemos que tu vivienda y lo que tienes dentro de ella lo has conseguido con esfuerzo,
-            por eso protegemos tu hogar contra todo lo que le pued​a pasar.​​​​​​
-          </p>
-        </div>
-      </div>
-      <div class="col-sm" style="position: inherit;">
-        <div class="card-item">
-          <div class="pic-2" (click)="showModal('mobility')">
-            <img src="../../assets/images/car.png">
-          </div>
-          <br>
-          <h3>Asegura Tu Movilidad</h3>
-          <p>
-            Sabemos que cuando compras un carro quieres también seguridad y protección
-            para ti y para quienes te acompañan en el camino.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
 
-      <div class="col-sm" style="position: inherit;">
-        <div class="card-item">
-          <div class="pic-2" (click)="showModal('heritage')">
-            <img src="../../assets/images/bill.png">
-          </div>
-          <br>
-          <h3>Seguros para bienes y patrimonio</h3>
-          <p>
-            Los recursos representan una inversión importante para las compañías,
-            por ello es necesario que cuenten con el mejor respaldo ante futuros inconvenientes
-            que puedan perjudicarlos.
-          </p>
+    <!-- <div style="display: flex;">
+      <div class="card-item" style="flex: 1; border: solid;">
+        <div class="pic-2" (click)="showModal('life')">
+          <img src="../../assets/images/family.png">
         </div>
+        <br>
+        <h3>Asegura Tu Vida</h3>
+        <p style="margin: 20px;">
+          Porque sabemos que tus sueños y tu autonomía son esenciales para que te sientas pleno, te
+          ac​​​ompañamos
+          incondicionalmente con el fin de que vivas intensamente​ cada moment​​o.​​
+        </p>
       </div>
-      <div class="col-sm" style="position: inherit;">
-        <div class="card-item">
-          <div class="pic-2" (click)="showModal('employees')">
-            <img src="../../assets/images/worker.png">
-          </div>
-          <br>
-          <h3>Seguros para empleados</h3>
-          <p>
-            Que sus empleados adquieran una cultura de ahorro y aseguren los ingresos
-            que complementarán su pensión, está en sus manos, gracias al Seguro de​
-            Pensión que ofrece SURA.
-          </p>
+      <div class="card-item" style="flex: 1; border: solid;">
+        <div class="pic-2" (click)="showModal('health')">
+          <img src="../../assets/images/salud.png">
         </div>
+        <br>
+        <h3>Asegura Tu Salud</h3>
+        <p>
+          Entre más conocemos de ti, más podemos cuidarte. Por eso,
+          ponemos a tu disposición diferentes programas y servicios que te cuidan a ti y a los que más
+          quieres.
+          Conoce más de estos servicios para tu bienestar y tu tranquilidad.
+          Entre más conocemos de ti, más podemos cuidarte. Por eso,
+          ponemos a tu disposición diferentes programas y servicios que te cuidan a ti y a los que más
+          quieres.
+          Conoce más de estos servicios para tu bienestar y tu tranquilidad.Entre más conocemos de ti, más podemos
+          cuidarte. Por eso,
+          ponemos a tu disposición diferentes programas y servicios que te cuidan a ti y a los que más
+          quieres.
+          Conoce más de estos servicios para tu bienestar y tu tranquilidad.Entre más conocemos de ti, más podemos
+          cuidarte. Por eso,
+          ponemos a tu disposición diferentes programas y servicios que te cuidan a ti y a los que más
+          quieres.
+          Conoce más de estos servicios para tu bienestar y tu tranquilidad.
+        </p>
+      </div>
+    </div> -->
+
+    <div class="row" style="display: flex;">
+      <div class="col-sm">
+        <div class="pic-2" (click)="showModal('house')">
+          <img src="../../assets/images/house.png">
+        </div>
+        <br>
+        <h3>Asegura Tu Vivienda</h3>
+        <p>
+          Sabemos que tu vivienda y lo que tienes dentro de ella lo has conseguido con esfuerzo,
+          por eso protegemos tu hogar contra todo lo que le pued​a pasar.​​​​​​
+        </p>
+      </div>
+      <div class="col-sm">
+        <div class="pic-2" (click)="showModal('mobility')">
+          <img src="../../assets/images/car.png">
+        </div>
+        <br>
+        <h3>Asegura Tu Movilidad</h3>
+        <p>
+          Sabemos que cuando compras un carro quieres también seguridad y protección
+          para ti y para quienes te acompañan en el camino.
+        </p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm" style="position: inherit;">
-        <div class="card-item">
-          <div class="pic-2" (click)="showModal('arl')">
-            <img src="../../assets/images/icon-arl.png">
-          </div>
-          <br>
-          <h3>A.R.L</h3>
-          <p>
-            ARL, Administradora de Riesgos Laborales. Su principal función es prevenir,
-            atender y proteger a los trabajadores de los efectos causados en el trabajo.
-          </p>
+    <div class="row" style="display: flex;">
+
+      <div class="col-sm">
+        <div class="pic-2" (click)="showModal('heritage')">
+          <img src="../../assets/images/bill.png">
         </div>
+        <br>
+        <h3>Seguros para bienes y patrimonio</h3>
+        <p>
+          Los recursos representan una inversión importante para las compañías,
+          por ello es necesario que cuenten con el mejor respaldo ante futuros inconvenientes
+          que puedan perjudicarlos.
+        </p>
       </div>
-      <div class="col-sm" style="position: inherit;">
-        <div class="card-item">
-          <div class="pic-2" (click)="showModal('others')">
-            <img src="../../assets/images/icon-dots.png">
-          </div>
-          <br>
-          <h3>Otros Seguros</h3>
-          <p>
-            Otros tipos diferentes de servicios que seguramente te ayudarán a estar más tranquilo y
-            protegido para que siempre puedas confiar.
-          </p>
+      <div class="col-sm">
+        <div class="pic-2" (click)="showModal('employees')">
+          <img src="../../assets/images/worker.png">
         </div>
+        <br>
+        <h3>Seguros para empleados</h3>
+        <p>
+          Que sus empleados adquieran una cultura de ahorro y aseguren los ingresos
+          que complementarán su pensión, está en sus manos, gracias al Seguro de​
+          Pensión que ofrece SURA.
+        </p>
+      </div>
+    </div>
+    <div class="row" style="display: flex;">
+      <div class="col-sm">
+        <div class="pic-2" (click)="showModal('arl')">
+          <img src="../../assets/images/icon-arl.png">
+        </div>
+        <br>
+        <h3>A.R.L</h3>
+        <p>
+          ARL, Administradora de Riesgos Laborales. Su principal función es prevenir,
+          atender y proteger a los trabajadores de los efectos causados en el trabajo.
+        </p>
+      </div>
+      <div class="col-sm">
+        <div class="pic-2" (click)="showModal('others')">
+          <img src="../../assets/images/icon-dots.png">
+        </div>
+        <br>
+        <h3>Otros Seguros</h3>
+        <p>
+          Otros tipos diferentes de servicios que seguramente te ayudarán a estar más tranquilo y
+          protegido para que siempre puedas confiar.
+        </p>
       </div>
 
     </div>

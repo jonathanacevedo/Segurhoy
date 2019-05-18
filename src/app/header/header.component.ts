@@ -231,6 +231,7 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleMenu(){
+    console.log("Llamando toggleMenu() con valor: "+this.openMenu);
     if(this.openMenu == true){
       this.openMenu = false;
     }  else {
@@ -238,10 +239,20 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  toggleMenuResponsive(){
+    setTimeout(() => {
+      if(this.openMenu == true){
+        this.openMenu = false;
+      }  else {
+        this.openMenu = true;
+      }
+    }, 200);
+  }
+
   setHeightMenu(heightVal: any) {
 
     let styles = {
-      'top': heightVal+'px'
+      'top': (heightVal-1)+'px'
     };
     return styles;
   }
