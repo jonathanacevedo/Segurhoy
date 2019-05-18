@@ -34,8 +34,7 @@ export class CompanyComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {   
-
-    if (window.pageYOffset > 400) {
+    if (window.pageYOffset > 1780) {
       this.stateCompany = "show";
     }
   }

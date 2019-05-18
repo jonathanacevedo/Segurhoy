@@ -42,12 +42,25 @@ export class ContentcardComponent implements OnInit {
   public p: any;
   public h1: any;
 
-  constructor() { }
+  constructor() {
+    this.br = document.createElement('br');
+    this.brsub = document.createElement('br');
+    this.h3 = document.createElement('h3');
+    this.p = document.createElement('p');
+    this.h1 = document.createElement('h1');
+
+    this.h3.style.color = '#f38c3d';
+    this.h3.style.fontFamily = 'OswaldExtraLight';
+
+    this.p.style.whiteSpace = 'pre-line';
+    this.p.style.color = '#708090';
+    this.p.style.fontSize = "1.2rem";
+    this.p.style.fontFamily = 'OswaldExtraLight';
+   }
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-
-    if (window.pageYOffset > 900) {
+    if (window.pageYOffset > 420) {
       this.stateServices = "show";
     }
   }
@@ -155,36 +168,14 @@ export class ContentcardComponent implements OnInit {
         break;
     }
 
-    // this.elem = <HTMLDivElement>(document.createElement('div'));
-
-    // this.elem.style.color = 'red;'
-
     this.content = document.createElement('div');
-    this.br = document.createElement('br');
-    this.brsub = document.createElement('br');
-    this.h3 = document.createElement('h3');
     this.div = document.createElement('div');
-    this.p = document.createElement('p');
-    this.h1 = document.createElement('h1');
-
     this.h3.textContent = this.title+'\n';
-    this.h3.style.color = '#f38c3d';
-    this.h3.style.fontFamily = 'OswaldExtraLight';
-    
-    
     this.h1.textContent = this.subtitle;
     this.h1.style.color = '#708090';
     this.h1.style.fontSize = '1.3rem';
-    
-
     this.p.textContent = this.text;
-    this.p.style.whiteSpace = 'pre-line';
-    this.p.style.color = '#708090';
-    this.p.style.fontSize = "1.2rem";
-    this.p.style.fontFamily = 'OswaldExtraLight';
-    
     this.div.appendChild(this.imagen);
-
     this.content.appendChild(this.h3);
     this.content.appendChild(this.brsub);
     this.content.appendChild(this.h1);

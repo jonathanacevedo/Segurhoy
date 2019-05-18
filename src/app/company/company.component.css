@@ -1,17 +1,15 @@
-.featured-schools {
+.company-main {
     padding: 60px 0;
 }
 section {
-    /* clear: both; */
     padding: 0;
-    /* *zoom: 1; */
 }
 
-.section-title.text-center:after, .text-center .section-title:after {
+.title.center-text:after, .center-text .title:after {
     margin: 1rem auto;
 }
 
-.section-title:after {
+.title:after {
     content: "";
     display: block;
     max-width: 3rem;
@@ -25,16 +23,15 @@ section:before, section:after {
     display: table;
 }
 
-.featured-schools .wrapper {
+.company-main .wrapper {
     padding: 0 20px;
 }
+
 .wrapper {
     position: inherit;
     display: block;
-    /* max-width: 1000px; */
     width: 90%;
     margin: 0 auto;
-    /* *zoom: 1; */
 }
 
 .wrapper:before, .wrapper:after {
@@ -48,7 +45,7 @@ div {
     box-sizing: border-box;
 }
 
-.featured-schools h2 {
+.company-main h2 {
     font-family: OswaldExtraLight;
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -59,36 +56,10 @@ div {
     padding: 0 25px;
 }
 
-.featured-schools .school-col-row {
-    margin: 10px -50px 0;
-    display: flex;
-}
-
-.featured-schools .school-col {
-    /* position: relative; */
-    width: 25%;
-    float: left;
-    padding: 0 30px;
-    border-right: 1px solid #d3d3d3;
-    margin-top: 50px;
-}
-
-.featured-schools .school-col:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -1px;
-    width: 1px;
-    height: 46px;
-}
-
-.featured-schools .school-col h3 {
-    font-family: OswaldExtraLight;
-    font-size: 1.625em;
-    line-height: 1;
-    text-transform: none;
-    color: #767676;
-    margin-bottom: 20px;
+.img-company{
+    width: 42%;
+    height: 24%; 
+    padding: 20px;
 }
 
 h3 {
@@ -100,9 +71,7 @@ h3 {
     margin-bottom: 20px;
 }
 
-.featured-schools .school-col p {
-    margin-bottom: 15px;
-}
+
 
 p {
     line-height: 2;
@@ -121,4 +90,3 @@ p {
 .border-bottom {
     border-bottom: 1px solid #dee2e6!important;
 }
-

@@ -164,12 +164,6 @@ export class HeaderComponent implements OnInit {
       this.state = "maxSize";
       this.stateInfo = "up-bar";
     }
-
-    // if (window.pageYOffset > 130) {
-    //   this.stateH = "state-header-2";
-    // } else {
-    //   this.stateH = "state-header-1";
-    // }
   }
 
   onMouseOver(element: any) {

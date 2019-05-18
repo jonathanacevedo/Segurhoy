@@ -33,8 +33,7 @@ export class WorkComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {   
-
-    if (window.pageYOffset > 1700) {
+    if (window.pageYOffset > 2400) {
       this.stateWorks = "show";
     }
   }
