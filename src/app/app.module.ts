@@ -41,7 +41,7 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
     BrowserAnimationsModule,
     ScrollToModule.forRoot(),
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyArw-1j35p7C97HU6Eq38XohyEANkcdpD0'
+      apiKey: 'APIKEY'
     }),
     SweetAlert2Module.forRoot({
       buttonsStyling: false,
