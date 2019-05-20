@@ -61,6 +61,39 @@ p{
 }
 
 
+@media (min-width: 1024px) {
+    .image-logo-info{
+        width: 20%; 
+        height: 20%;
+    }
+
+    .info-container{
+        background: url(../../assets/images/fondo-infoMinSize.jpg);
+    }
+} 
+
+@media (min-width: 1100px) {
+    .image-logo-info{
+        width: 20%; 
+        height: 20%;
+    }
+
+    .info-container{
+        background: url(../../assets/images/fondo-infoMediumSize.jpg);
+    }
+} 
+
+@media (min-width: 1380px) {
+    .image-logo-info{
+        width: 20%; 
+        height: 20%;
+    }
+
+    .info-container{
+        background: url(../../assets/images/fondo-info6.jpg);
+    }
+} 
+
 @media (min-width: 1700px) {
     .image-logo-info{
         width: 20%; 
