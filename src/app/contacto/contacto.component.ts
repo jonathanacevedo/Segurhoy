@@ -41,7 +41,6 @@ export class ContactoComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {   
-    console.log(window.pageYOffset);
     if (window.pageYOffset > 2980) {
       this.stateContact = "show";
     }
